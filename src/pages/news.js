@@ -10,9 +10,6 @@ function News({ data }) {
     <div className="news">
       <NavBar />
       <div className="news-content">
-        {/* <Card className="card-scroll-content " variant="outlined">
-          <BackToTop />
-        </Card> */}
         <Card className="card-scroll-content ">
           <h1>Aktuella artiklar om hemstäd</h1>
           <h3 style={{ width: "80%", margin: "0 auto", marginBottom: "2rem" }}>

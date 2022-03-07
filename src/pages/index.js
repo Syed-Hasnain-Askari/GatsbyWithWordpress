@@ -11,9 +11,6 @@ export default function Home() {
     <Layout>
       <NavBar/>
       <div className="home-content">
-        {/* <Card className="card-scroll-content " variant="outlined">
-          <BackToTop />
-        </Card> */}
         <HomeCard />
       </div>
       <Footer/>

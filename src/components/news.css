@@ -1,8 +1,3 @@
-/* .news {
-  /* height: 100vh; */
-  /* background-color:#173348 !important ;
-    border:2px solid green */
- */
 body {
   background-color: #173348;
 }
@@ -36,17 +31,13 @@ p {
 }
 .news-img-left {
   width: 40%;
-  /* min-width:293px !important; */
 }
 .news-right {
   width: 60%;
-  /* min-width: 499px; */
   word-wrap: break-word
 }
 
 @media only screen and (max-width: 1000px){
-    /*Tablets [601px -> 1200px]*/
-
     .news-posts{
         flex-direction: column !important;
         align-items:center;

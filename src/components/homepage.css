@@ -10,7 +10,7 @@ p {
   font-size: 20px;
 }
 .home-content {
-  background-image: url("src/images/bg.jpg");
+  background-image: url("./images/bg.jpg");
   background-size: cover;
   background-position: top left !important;
   padding-top: 2rem !important;

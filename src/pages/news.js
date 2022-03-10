@@ -6,6 +6,8 @@ import "../components/news.css"
 import { NavBar } from "../components"
 function News({ data }) {
   console.log("data >>", data)
+  //for removing <p> and </p> 
+  var replaceChars={ "<p>":"" , "</p>":" " };
   return (
     <div className="news">
       <NavBar />
@@ -19,20 +21,20 @@ function News({ data }) {
             igång.
           </h3>
           {data.allWpPost.edges.map(val => {
-            console.log(val)
+         
             return (
               <Link to={`/news/${val.node.slug}`}>
                 <Card className="news-posts">
                   <div className="news-img-left">
                     <img
                       style={{ width: "100%" }}
-                      src={val.node.featuredImage.node.sourceUrl}
+                      src={val.node.featuredImage}
                     ></img>
                   </div>
                   <div className="news-right">
                     <h1>{val.node.title}</h1>
                     <p>
-                      {val.node.featuredImage.node.description}
+                      {val.node.content.replace(/<p>|<\/p>/g,function(match) {return replaceChars[match];})}
                     </p>
                   </div>
                 </Card>
